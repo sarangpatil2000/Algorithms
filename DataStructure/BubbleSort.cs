@@ -3,7 +3,7 @@ namespace DataStructure
 {
     public class BubbleSort
     {
-        public static void Main()
+        public static void Main1()
         {
             Console.WriteLine("Bubble sort");
             int[] inputarray = Common.AddInput();
