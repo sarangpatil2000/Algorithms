@@ -1,7 +1,7 @@
 ﻿using System;
 namespace DataStructure
 {
-    public class BubbleSort
+    public class BubbleSortAlgorithm
     {
         public static void Main1()
         {

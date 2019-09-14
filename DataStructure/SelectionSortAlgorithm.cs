@@ -1,7 +1,7 @@
 ﻿using System;
 namespace DataStructure
 {
-    public class SelectionSort
+    public class SelectionSortAlgorithm
     {
         public static void Main()
         {
