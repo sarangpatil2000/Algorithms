@@ -16,18 +16,18 @@ namespace DataStructure
             int value = 0;
             for (int i = 0; i < inputArray.Length; i++)
             {
-                int minNumber = GetMinNumber(inputArray, i, out value);
+                GetMinNumber(inputArray, i, out value);
                 inputArray = Swap(inputArray, i, value);
             }
             return inputArray;
         }
-        public static int GetMinNumber(int[] input, int startIndex, out int position)
+        public static void GetMinNumber(int[] input, int startIndex, out int position)
         {
             int minNumber = input[startIndex];
             position = startIndex;
             if (startIndex + 1 == input.Length)
             {
-                return minNumber;
+                return;
             }
             for (int i = startIndex; i < input.Length - 1; i++)
             {
@@ -39,7 +39,6 @@ namespace DataStructure
                     GetMinNumber(input, i + 1, out value);
                 }
             }
-            return minNumber;
         }
         public static int[] Swap(int[] inputArray, int i, int minValueIndex)
         {
