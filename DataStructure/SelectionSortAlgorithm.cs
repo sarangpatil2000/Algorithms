@@ -3,7 +3,7 @@ namespace DataStructure
 {
     public class SelectionSortAlgorithm
     {
-        public static void Main()
+        public static void Main1()
         {
             Console.WriteLine("Selection sort");
             int[] inputarray = Common.AddInput();

@@ -36,6 +36,7 @@
     <Compile Include="BubbleSortAlgorithm.cs" />
     <Compile Include="Common.cs" />
     <Compile Include="SelectionSortAlgorithm.cs" />
+    <Compile Include="InsertionSortAlgorithm.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>
