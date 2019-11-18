@@ -3,7 +3,7 @@ namespace DataStructure
 {
     public class InsertionSortAlgorithm
     {
-        public static void Main()
+        public static void Main1()
         {
             Console.WriteLine("Insertion sort");
             int[] inputarray = Common.AddInput();
