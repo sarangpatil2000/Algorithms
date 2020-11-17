@@ -20,7 +20,9 @@ namespace DataStructure
             Console.WriteLine(" finding 1000 : " + binaryTree.Find(1000).ToString());
             Console.WriteLine(" finding 50 : " + binaryTree.Find(50).ToString());
 
-            binaryTree.PreDepthTraversal(binaryTree.currentObject);
+            Console.WriteLine("Preorder traversal : "); binaryTree.PreOrderTraversal(binaryTree.currentObject);
+            Console.WriteLine("InOrder Traverssal : "); binaryTree.InOrderTraversal(binaryTree.currentObject);
+            Console.WriteLine("PostOrder Traversal : "); binaryTree.PostOrderTraversal(binaryTree.currentObject);
             Console.ReadLine();
         }
         private void Add(int value)
@@ -55,16 +57,38 @@ namespace DataStructure
             }
             return false;
         }
-        internal void PreDepthTraversal(Node sendNode)
+        internal void PreOrderTraversal(Node sendNode)
         {
             Node presentNode = sendNode;
             Console.Write(presentNode.Value + ",");
             if (presentNode.LeftNode != null)
             {
-                PreDepthTraversal(presentNode.LeftNode);
+                PreOrderTraversal(presentNode.LeftNode);
             }
             if(presentNode.RightNode != null)
-            { PreDepthTraversal(presentNode.RightNode); }
+            { PreOrderTraversal(presentNode.RightNode); }
+        }
+        internal void InOrderTraversal(Node sendNode)
+        {
+            Node presentNode = sendNode;
+            if (presentNode.LeftNode != null)
+            {
+                InOrderTraversal(presentNode.LeftNode);
+            }
+            Console.Write(presentNode.Value + ",");
+            if (presentNode.RightNode != null)
+            { InOrderTraversal(presentNode.RightNode); }
+        }
+        internal void PostOrderTraversal(Node sendNode)
+        {
+            Node presentNode = sendNode;
+            if (presentNode.LeftNode != null)
+            {
+                PostOrderTraversal(presentNode.LeftNode);
+            }
+            if (presentNode.RightNode != null)
+            { PostOrderTraversal(presentNode.RightNode); }
+            Console.Write(presentNode.Value + ",");
         }
     }
 

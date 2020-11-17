@@ -39,6 +39,7 @@
     <Compile Include="InsertionSortAlgorithm.cs" />
     <Compile Include="BinarySearchAlgorithm.cs" />
     <Compile Include="RecurssionTest.cs" />
+    <Compile Include="BinaryTree.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>

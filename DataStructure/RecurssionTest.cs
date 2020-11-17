@@ -4,7 +4,7 @@ namespace DataStructure
     public class RecurssionTest
     {
         public static double factorial = 1;
-        public static void Main()
+        public static void Main1()
         {
             Console.WriteLine("Enter number to find factorial");
             int number = Convert.ToInt32(Console.ReadLine());
